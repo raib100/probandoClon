@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejemplo de formulario</title>
+
+</head>
+<body>
+    <form>
+        <a href="index.html"> ir a index</a>
+
+    
+        <!-- todo el contenido del formulario debe ir en la etiqueta form-->
+
+       <!--input type="text" -->
+       <h1>ingreso de nombre</h1>
+       <label for ="inputNombre"> Nombre</label>
+       <input placeholder="Nombre" autocomplete="on" type="text" id="inputNombre" name="inputNombre">
+       <br>
+       <!-- input type ="password"-->
+       <h1>ingreso de contraseña</h1>
+       <label>contraseña </label>
+       <input type="password">
+       <br>
+       <!--input type="radio"-->
+       <!--con el atributo name en radio se agrupan los radios -->
+       <h1>jornada laboral deseada</h1>
+       <input type="radio" name="radioJornada" id="radioAM" value="am">
+       <label for="radioAM">mañana </label>
+       <input type="radio" name="radioJornada" id="radioTarde" value="tarde">
+       <label for="radioTarde">tarde</label>
+       <input type="radio" name="radioJornada" id="radioNoche" value="noche">
+       <label for="radioNoche">noche</label>
+       <br>
+       <!-- input type="checkbox"-->
+       <h1> medio de transporte utilizado</h1>
+       <input type="checkbox" id="checkboxBicicleta" name="checkboxBicicleta" value="Bicicleta">
+       <label for="checkboxBicicleta">bicicleta</label>
+       <input type="checkbox" id="checkboxMotocicleta" name="checkboxMotocicleta" value="Motocicleta">
+       <label for="checkboxMotocicleta">Motocicleta</label>
+       <input type="checkbox" id="checkboxAutomobil" name="checkboxAutomobil" value="Automobil">
+       <label for="checkboxAutomobil">automobil</label>
+       <br>
+       <!--input type="color"-->
+       <h1>seleccion de color </h1>
+       <label for="inputColor">selecciona el color favorito para tu auto</label>
+       <input type="color" id="inputColor" name="inputColor">
+       <br>
+       <h1>seleccion de fecha </h1>
+       <!--input type="date"-->
+       <label for="inputFechaNacimiento"> fecha de nacimiento</label>
+       <input type="date" min="1960-01-31" max="2022-12-31" id="inputFechaNacimiento" name="inputFechaNacimiento">
+       <br>
+       <h1>seleccion hora de ingreso</h1>
+       <!-- fecha y hora-->
+       <label for="inputFecha-Hora"> fecha y hora</label>
+       <input type="datetime-local" id="inputFecha-Hora" name="inputFecha-Hora">   
+       <br>
+       <!--input email-->
+       <h1>ingreso de email</h1><!--este es el titulo de la seccion del menu-->
+       <label for="inputEmail"> Email</label>
+       <input type="email" id="inputEmail" name="inputEmail">
+       <br>
+       <!--input type="file"-->
+       <h1>seleccion de archivo (tipo foto)</h1>
+       <label for="inputFoto"> Foto </label>
+       <input type="file" id="inputFoto" name="inputFoto">
+       <br>
+       <!--input type="mont"-->
+       <h1>seleccion de un mes del año</h1>
+       <label for="inputMes"> en que mes fueron tus ultimas vacaciones</label>
+       <input type="month" id="inputMes" name="inputMes">
+       <br>
+       <!--input type="number"-->
+       <h1>seleccionar numero</h1>
+       <label for="tallaCalzado"> Calzado (35-45) </label>
+       <input type="number" id="tallaCalzado" name="tallaCalzado" min="35" max="45">
+       <br>
+       <!--input type="tel"-->
+       <h1>ingreso de numero telefonico</h1>
+       <label for="inputTelefono"> Telefono  (formato +57 xxx-xxx-xxxx)</label>
+       <input type="tel" id="inputTelefono" placeholder="+57-000-000-0000"
+       pattern="[+][0-9]{2}-[0-9]{3}[0-9]{3}[0-9]{4}" name="inputTelefono" title="formato +57 000-000-0000">
+       <br>
+       <!-- input type="url"-->
+       <h1> ingreso de sitio web personal </h1>
+       <label for="inputSitioWeb">sitio web personal</label>
+       <input type="url" id="inputSitioWeb" name="inputSitioWeb">
+       <br>
+       <!--expresiones regulares -->
+       <h1>expresiones regulares</h1>
+       <label for="inputCodigoPais"> codigo pais </label> 
+       <input type="text" id="inputCodigoPais" name="inputCodigoPais" pattern="[A-Az-z]{3}" title="tres letras para el codidgo">
+       <br>
+       <!--input "list"-->
+       <h1>lista de opciones</h1>
+       <label>dia de la semana que descansa</label>
+       <input list="listaDias" name="dia">
+       <datalist>
+        <option  value ="Lunes">
+            <option value ="martes">
+            <option value ="miercoles">
+            <option value ="jueves">
+            <option value ="sabado">
+            <option value ="domingo">    
+        <datalist>    
+       
+       <br>
+       <!--input type="submit"-->
+       <input type="submit" value="registrar">   
+
+    </form>
+</body>
+
+    
